@@ -1,10 +1,10 @@
 %!PS-Adobe-3.0
 %%Title: Bitonic Sorter Block Diagram.ps
 %%Creator: XCircuit v3.8 rev83
-%%CreationDate: Wed Feb  1 06:14:06 2017
+%%CreationDate: Wed Feb  1 08:53:10 2017
 %%Pages: 1
 %%BoundingBox: 0 0 612 792
-%%DocumentNeededResources: font Helvetica 
+%%DocumentNeededResources: font Helvetica Times-Roman 
 %%EndComments
 %%BeginProlog
 %
@@ -196,6 +196,15 @@ begingate
 endgate
 } def
 
+/generic::dot {
+% trivial
+begingate
+248 1.000 0 0 6 0.000 360.000 xcarc
+1.000 0.000 0.000 scb
+(x) {/Times-Roman cf} 2 29 0 1.000 0 0 pinlabel
+endgate
+} def
+
 
 %%EndSetup
 
@@ -204,7 +213,7 @@ endgate
 %%PageBoundingBox: 0 0 612 792
 /pgsave save def bop
 1.0000 inchscale
-2.6000 setlinewidth 1584 513 translate
+2.6000 setlinewidth 1595 528 translate
 
 0 1.000 -1245 894 -1245 606 -1117 606 -1117 894 4 polygon
 (BitStream_Swap) {/Helvetica cf} 2 16 0 1.000 -1309 910 label
@@ -266,6 +275,10 @@ label
 1 1.000 -96 224 -80 224 2 polygon
 1 1.000 -96 672 -80 672 2 polygon
 1 1.000 -96 832 -80 832 2 polygon
+1.000 0 -1760 1120 generic::dot
+1.000 0 160 1120 generic::dot
+1.000 0 160 -64 generic::dot
+1.000 0 -1760 -64 generic::dot
 pgsave restore showpage
 
 %%Trailer
